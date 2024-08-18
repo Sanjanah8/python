@@ -1,0 +1,5 @@
+def sort_by_second(lst):
+    return sorted(lst, key=lambda x: x[1])
+
+# Example usage:
+print(sort_by_second([(1, 2), (3, 1), (5, 4)]))  # Output: [(3, 1), (1, 2), (5, 4)]
