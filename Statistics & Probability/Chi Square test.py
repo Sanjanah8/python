@@ -1,13 +1,11 @@
 import scipy.stats as stats
 
-# Observed frequencies
-observed = np.array([10, 20, 30])
+# Sample data (contingency table)
+data = [[10, 20, 30], [6, 15, 20]]
 
-# Expected frequencies
-expected = np.array([15, 15, 30])
-
-# Perform chi-square test
-chi2_stat, p_value = stats.chisquare(f_obs=observed, f_exp=expected)
-
+# Perform Chi-Square test
+chi2_stat, p_value, dof, expected = stats.chi2_contingency(data)
 print(f"Chi-Square Statistic: {chi2_stat}")
 print(f"P-Value: {p_value}")
+print(f"Degrees of Freedom: {dof}")
+print(f"Expected Frequencies: {expected}")
