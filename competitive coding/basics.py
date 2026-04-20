@@ -168,3 +168,34 @@ visited = set([start])
 ---------------------------------
 def dfs(node):
     visited.add(node)
+---------------------------------
+import heapq
+
+arr = [5, 2, 8]
+heapq.heapify(arr)
+
+print(heapq.heappop(arr))  # 2
+---------------------------------
+heapq.heappush(arr, -x)
+x = -heapq.heappop(arr)
+---------------------------------
+for _ in range(k):
+    x = heapq.heappop(heap)
+    heapq.heappush(heap, new_value)
+
+---------------------------------
+heapq.nlargest(k, arr)
+heapq.nsmallest(k, arr)
+
+---------------------------------
+if len(heap) > k:
+    heapq.heappop(heap)
+
+---------------------------------
+import heapq
+
+heapq.heapify(arr)
+---------------------------------
+for _ in range(k):
+    x = heapq.heappop(arr)
+    heapq.heappush(arr, -x)
