@@ -13,3 +13,8 @@ cannot use O(n²)
 2.n ≤ 500
 
 brute force OK
+----------
+subarray → prefix
+k operations → heap
+maximize/minimize → greedy
+frequency → Counter
