@@ -20,3 +20,16 @@ k operations → heap
 maximize/minimize → greedy
 
 frequency → Counter
+
+--------------
+# How to recognize “simulate” questions
+
+Look for words like:
+
+“perform q queries”,
+“apply operation”,
+“update array”,
+“assign values”,
+“do this step by step”,
+
+If you see this → just use loops
