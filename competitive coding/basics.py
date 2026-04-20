@@ -133,3 +133,38 @@ for x in arr:
 arr.sort(key=lambda x: x[1])
 ---------------------------------
 arr[::-1]
+---------------------------------
+curr = arr[0]
+best = arr[0]
+
+for x in arr[1:]:
+    curr = max(x, curr + x)
+    best = max(best, curr)
+
+print(best)
+---------------------------------
+import heapq
+
+h = []
+heapq.heappush(h, 3)
+heapq.heappush(h, 1)
+
+print(heapq.heappop(h))  # smallest
+---------------------------------
+import heapq
+
+heapq.heapify(arr)
+
+for _ in range(k):
+    x = heapq.heappop(arr)
+    heapq.heappush(arr, -x)
+
+print(sum(arr))
+---------------------------------
+from collections import deque
+
+q = deque([start])
+visited = set([start])
+---------------------------------
+def dfs(node):
+    visited.add(node)
