@@ -14,6 +14,9 @@ brute force OK
 
 ----------
 subarray → prefix
+
 k operations → heap
+
 maximize/minimize → greedy
+
 frequency → Counter
